@@ -1,12 +1,13 @@
 {
-    "description": "System Administration Guide for High Performance Computing (HPC) on IBM Power Systems",
-    "pdf.fontFamily": "Arial",
-    "pdf.fontSize": "11",
-    "pdf.margin.bottom": "56",
-    "pdf.margin.left": "62",
-    "pdf.margin.right": "62",
-    "pdf.margin.top": "56",
-    "pdf.pageNumbers": "true",
-    "pdf.paperSize": "a4",
-    "title": "OpenPOWER HPC System Administration Guide"
+	"description": "System Administration Guide for High Performance Computing (HPC) on IBM Power Systems",
+	"pdf.fontFamily": "Arial",
+	"pdf.fontSize": "11",
+	"pdf.margin.bottom": "56",
+	"pdf.margin.left": "62",
+	"pdf.margin.right": "62",
+	"pdf.margin.top": "56",
+	"pdf.pageNumbers": "true",
+	"pdf.paperSize": "a4",
+	"plugins": ["gist", "theme-darkblue"],
+	"title": "OpenPOWER HPC System Administration Guide"
 }
