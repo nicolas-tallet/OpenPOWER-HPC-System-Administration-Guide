@@ -1,10 +1,4 @@
----
-title: LMod
-layout: page
----
-
 # Lmod
-
 
 ## Pre-Requisites
 
