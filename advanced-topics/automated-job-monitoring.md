@@ -101,12 +101,12 @@ ALL ALL = NOPASSWD: STANDARD_USER_COMMANDS
 * Create a Host Pre-/Post-Exec configuration file which defines:
   * The commands to be used, including their list of options
   * The names of output files
-{% gist nicolas-tallet/b9e4558cc932bd5ccd6149fa0c645ac8 %}
+{% gist id="nicolas-tallet/b9e4558cc932bd5ccd6149fa0c645ac8" %}{% endgist %}
 
 * Create a Host Pre-Exec script which will perform the following actions on each execution host:
   * Start nmon monitoring process in background
   * Start DCGM
-{% gist nicolas-tallet/8b681ac8644933027d7b0b34552f9d4a %}
+{% gist id="nicolas-tallet/8b681ac8644933027d7b0b34552f9d4a" %}{% endgist %}
 
 * Create a Host Post-Exec script which will perform the following actions on each execution host:
   * nmon
@@ -115,28 +115,28 @@ ALL ALL = NOPASSWD: STANDARD_USER_COMMANDS
   * DCGM
     * Stop the job monitoring process
     * Export the monitoring data into an output file
-{% gist nicolas-tallet/5f96abb5cca07d8290726564b8cc1c19 %}
+{% gist id="nicolas-tallet/5f96abb5cca07d8290726564b8cc1c19" %}{% endgist %}
 
 ### Setup nmon External Data Collector (EDC)
 
 The process to setup an energy consumption EDC is the following:
 
 * Create EDC configuration file:
-{% gist nicolas-tallet/29e6f05df440f8b840c3307304c997b2 %}
+{% gist id="nicolas-tallet/29e6f05df440f8b840c3307304c997b2" %}{% endgist %}
 
 * Create EDC startup script:
-{% gist nicolas-tallet/dfc3b07605c0858689307266a4fe8c3b %}
+{% gist id="nicolas-tallet/dfc3b07605c0858689307266a4fe8c3b" %}{% endgist %}
 
 * Create EDC snapshot script:
-{% gist nicolas-tallet/d0151a1bfa53c92d09b5f374e30b5348 %}
+{% gist id="nicolas-tallet/d0151a1bfa53c92d09b5f374e30b5348" %}{% endgist %}
 
 * Create EDC termination script:
-{% gist nicolas-tallet/1b8360bf2471ff157e5c882d6f0f8e49 %}
+{% gist id="nicolas-tallet/1b8360bf2471ff157e5c882d6f0f8e49" %}{% endgist %}
 
 ### Extend *nmonchart* Graph Generator Script
 
 In order for the `nmonchart` script to be able to process Power Usage data, the following patch must be applied to the standard script (version 31):
-{% gist nicolas-tallet/f3440ef41fc20a46febb94b011593e84 %}
+{% gist id="nicolas-tallet/f3440ef41fc20a46febb94b011593e84" %}{% endgist %}
 
 The patch can be applied through the following command:
 ```
