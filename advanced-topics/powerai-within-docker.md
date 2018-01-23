@@ -1,7 +1,3 @@
----
-layout: page
-title: PowerAI Through Docker
----
 # PowerAI Through Docker Containers Inside IBM Spectrum LSF
 
 The overall process is made of the following steps:
@@ -126,7 +122,7 @@ NVIDIA Docker plugin: 1.0.1
 ```
 $ vi /usr/lib/systemd/system/nvidia-docker.service
 ```
-{% gist geoffrey-pascal/a25903aee7642082de09edf6b40cee61 %}
+{% gist id="geoffrey-pascal/a25903aee7642082de09edf6b40cee61" %}{% endgist %}
 
 
 *	Start the NVIDIA Docker service:
@@ -168,7 +164,7 @@ Once the NVIDIA Docker has been enabled, a first baseline of Docker images needs
 The process for generating CUDA images is the following:
 
 * Create the following Dockerfile:
-{% gist nicolas-tallet/bdd814838fa66b18fc9053f7d8747b5d %}
+{% gist id="nicolas-tallet/bdd814838fa66b18fc9053f7d8747b5d" %}{% endgist %}
 
 * Launch image generation using the above Dockerfile:
 ```
@@ -192,7 +188,7 @@ The process for generating cuDNN images is the following:
 > A registration to NVIDIA's Accelerated Computing Developer Program is required.
 
 * Create the following Dockerfile:
-{% gist nicolas-tallet/6dfcce9eeb390a9795239b59b86f11db %}
+{% gist id="nicolas-tallet/6dfcce9eeb390a9795239b59b86f11db" %}{% endgist %}
 
 * Launch image generation using the above Dockerfile:
 ```
@@ -221,7 +217,7 @@ $ wget https://public.dhe.ibm.com/software/server/POWER/Linux/mldl/ubuntu/mldl-r
 ```
 
 *	Create a Dockerfile in the same directory where the PowerAI repository Debian packages resides:
-{% gist nicolas-tallet/e545548eb38c859b1328e54b9000c10a %}
+{% gist id="nicolas-tallet/e545548eb38c859b1328e54b9000c10a" %}{% endgist %}
 
 *	Build the Docker image from previously created Dockerfile:
 ```
